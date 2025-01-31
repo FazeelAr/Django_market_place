@@ -28,12 +28,17 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#added by me
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 # Application definition
 
 INSTALLED_APPS = [
     'core',
     'item',
+    'dashboard',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
